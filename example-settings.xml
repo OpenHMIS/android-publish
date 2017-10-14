@@ -1,0 +1,23 @@
+<settings xmlns="http://maven.apache.org/SETTINGS/1.0.0"
+      xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+      xsi:schemaLocation="http://maven.apache.org/SETTINGS/1.0.0
+                          https://maven.apache.org/xsd/settings-1.0.0.xsd">
+    <profiles>
+        <profile>
+          <id>publisher</id>
+              <activation>
+                <activeByDefault>false</activeByDefault>
+              </activation>
+            <properties>
+                <android.sdk.path>[SDK Path]</android.sdk.path>
+                <android.publisher.google.email>[Service Email Address]</android.publisher.google.email>
+                <android.publisher.google.p12>[P12 File Path]</android.publisher.google.p12>
+                <android.publisher.apkpath>[APK File Path]</android.publisher.apkpath>
+                <android.publisher.project.name>[Project Name]</android.publisher.project.name>
+                <android.publisher.listing.directory>[Play Listing Directory]</android.publisher.listing.directory>
+                <android.publisher.package.name>[Package Name]</android.publisher.package.name>
+                <android.publisher.track>[Publish Track (alpha, beta, rollout, production)]</android.publisher.track>
+            </properties>
+        </profile>
+    </profiles>
+</settings>
